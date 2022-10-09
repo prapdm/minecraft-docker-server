@@ -7,8 +7,8 @@ WORKDIR /minecraft-server
 RUN apt-get update && \
     apt-get install -y wget unzip  libcurl4-openssl-dev
 
-RUN wget https://minecraft.azureedge.net/bin-linux/bedrock-server-1.19.20.02.zip
-RUN unzip bedrock-server-1.19.20.02.zip
+RUN wget https://minecraft.azureedge.net/bin-linux/bedrock-server-VERSION.zip
+RUN unzip bedrock-server-VERSION.zip
 COPY allowlist.json .
 COPY server.properties .
 COPY entrypoint.sh .

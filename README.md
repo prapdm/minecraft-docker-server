@@ -1,7 +1,7 @@
 # Minecraft Bedrock-Server 
 ## _Docker_
 
-Run Minecraft Bedrock-Server in docker.
+Run Minecraft Bedrock-Server in docker. Check newer version on https://www.minecraft.net/en-us/download/server/bedrock
 
 ## Installation
 
@@ -13,7 +13,7 @@ make version=1.19.20.02 build
 Run server. Set port and folder with wordl on local machine
  
 ```sh
-make port=19132 path=/home/mincraft/worlds run
+make port=19132 path=/data/worlds run
 ```
 Start server:
  
