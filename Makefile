@@ -3,7 +3,7 @@ build:
 	docker build -t avenus/bedrock-server-minecraft .
 
 run:
-	docker run -d --restart always  --name Bedrock-Server -p19132:$(port)/udp avenus/bedrock-server-minecraft -v $(path):/minecraft-server/worlds
+	docker run -d --restart always  --name Bedrock-Server -v $(path):/minecraft-server/worlds   -p19132:$(port)/udp avenus/bedrock-server-minecraft.
 
 start:
 	docker start Bedrock-Server
